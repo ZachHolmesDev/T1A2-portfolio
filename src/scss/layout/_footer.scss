@@ -1,0 +1,11 @@
+// Import the base styles
+@import '../base/variables';
+@import '../base/reset';
+
+// Import the utility styles
+@import '../utils/functions';
+
+
+footer {
+    background-color: $accent;
+}

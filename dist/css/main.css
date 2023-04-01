@@ -1,0 +1,83 @@
+header {
+  background-color: #7dcd85;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  position: sticky;
+  top: 0;
+  height: 4rem;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", monospace;
+  color: #ffffff;
+  font-weight: bolder;
+}
+header .title {
+  margin: 0;
+}
+header .title h1 {
+  margin: 0;
+}
+header nav {
+  position: relative;
+}
+header nav .nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+header nav .nav-list li {
+  margin-right: 20px;
+}
+header nav a {
+  text-decoration: none;
+  color: #5a5a66;
+  font-size: larger;
+  font-weight: bolder;
+  transition: color 0.4s ease-in-out;
+}
+header nav a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+header nav .hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  header nav {
+    display: flex;
+  }
+  header nav .nav-list {
+    display: none;
+    position: fixed;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    background-color: #7dcd85;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0.4rem;
+  }
+  header nav .nav-list.show {
+    display: flex;
+  }
+  header nav .hamburger-menu {
+    display: block;
+  }
+}
+footer {
+  background-color: #7dcd85;
+}
+
+body {
+  background-color: #77a4bb;
+  margin: 0;
+  height: 2000px;
+  color: rgb(46, 47, 51);
+  font-family: monospace, sans-serif;
+}
+
+/*# sourceMappingURL=main.css.map */

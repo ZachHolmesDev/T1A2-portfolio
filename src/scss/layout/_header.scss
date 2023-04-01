@@ -1,0 +1,97 @@
+// Import the base styles
+@import "../base/variables";
+@import "../base/reset";
+
+// Import the utility styles
+@import "../utils/functions";
+
+header {
+    background-color: $accent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    position: sticky;
+    top: 0;
+
+    height: $header-height;
+
+    box-sizing: border-box;
+    font-family: "Red Hat Display", monospace;
+    color: $secondary-text;
+    font-weight: bolder;
+
+    .title {
+        margin: 0;
+        h1 {
+            margin: 0;
+        }
+    }
+
+    nav {
+        position: relative;
+
+        .nav-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            // font-family: ;
+
+            li {
+                margin-right: 20px;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: $teriary-text; 
+            font-size: larger;
+            font-weight: bolder;
+            transition: color 0.4s ease-in-out;
+
+            &:hover {
+                color: $secondary-text;
+                text-decoration: underline;
+            }
+        }
+
+        .hamburger-menu {
+            display: none;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+      nav {
+        display: flex;
+  
+        .nav-list {
+          display: none;
+          position: fixed;
+          top: $header-height;
+          left: 0;
+          // right: 5;
+          width: 100%; 
+          background-color: $secondary-accent;
+  
+          flex-direction: row;
+          justify-content: space-around;
+
+          // font-size: large;
+          padding: .4rem;
+  
+          &.show {
+            display: flex;
+          }
+        }
+  
+        .hamburger-menu {
+          display: block;
+        }
+      }
+    }
+  }
+
