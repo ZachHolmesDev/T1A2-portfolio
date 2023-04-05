@@ -64,34 +64,36 @@ header {
 }
 
 @media (max-width: 768px) {
-    header {
-      nav {
-        display: flex;
-  
-        .nav-list {
-          display: none;
-          position: fixed;
-          top: $header-height;
-          left: 0;
-          // right: 5;
-          width: 100%; 
-          background-color: $secondary-accent;
-  
-          flex-direction: row;
-          justify-content: space-around;
+  header {
+    nav {
 
-          // font-size: large;
-          padding: .4rem;
-  
-          &.show {
-            display: flex;
-          }
+      .nav-list {
+        display: none;
+        position: fixed;
+        // top: $header-height;
+        left: 0;
+        // right: 5;
+        width: 100%;
+        background-color: $accent;
+        border: solid 1px black;
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+
+        flex-direction: row;
+        justify-content: space-around;
+
+        // font-size: large;
+        padding: 0.4rem;
+
+        &.show {
+          display: flex;
         }
-  
-        .hamburger-menu {
-          display: block;
-        }
+      }
+
+      .hamburger-menu {
+        display: block;
       }
     }
   }
-
+}
