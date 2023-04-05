@@ -111,7 +111,7 @@ footer .footer-items .footer-details {
   display: flex;
 }
 footer .footer-items .footer-details p {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -122,16 +122,14 @@ footer .footer-items .social-links {
   list-style: none;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
   margin-right: 0.4rem;
-  padding: 0.6rem;
 }
 footer .footer-items .social-links i {
   color: #ffffff;
 }
 footer .footer-items .social-links a {
   text-decoration: none;
+  margin-left: 1rem;
 }
 footer .footer-items .social-links div {
   display: inline-flex;
@@ -140,6 +138,8 @@ footer .footer-items .social-links div {
 
 .intro-hero {
   text-align: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
   background-color: rgb(152, 215, 158);
   border-radius: 15px;
   box-shadow: 0 2px 4px #5a5a66;

@@ -26,14 +26,13 @@ footer {
         .footer-details {
             display: flex;
             p {
-                font-size: .8rem;
+                font-size: .75rem;
                 margin-top: .5rem;
                 margin-bottom: .5rem;
 
                 &:first-child { 
                     margin-right: 1rem;
-                  }
-                
+                  }             
             }
         }
         
@@ -43,10 +42,7 @@ footer {
             flex-direction: row;
             justify-content: space-between;
             
-            margin-top: .25rem;
-            margin-bottom: .25rem;
             margin-right: .4rem;
-            padding: .6rem;
 
             i {
                 color: $secondary-text;
@@ -54,6 +50,7 @@ footer {
 
             a {
                 text-decoration: none;
+                margin-left: 1rem;
             }
 
             div {
