@@ -1,9 +1,11 @@
 .intro-hero {
     text-align: center;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
     background-color: $secondary-accent;
     border-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     box-shadow: 0 2px 4px $secondary-background;
     border: 2px solid $secondary-background;
 

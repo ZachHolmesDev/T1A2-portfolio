@@ -29,14 +29,20 @@
 // take precedence over other styles in the project.
 
 body {
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
     background-color: $background;
     margin: 0;
-    // height: 2000px;
     font-family: sans-serif;
     
 }
 
 main {
+    flex: 1;
+
     color: $primary-text;
     margin: 1rem;
 

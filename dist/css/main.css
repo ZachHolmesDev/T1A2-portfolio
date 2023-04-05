@@ -136,10 +136,12 @@ footer .footer-items .social-links div {
 
 .intro-hero {
   text-align: center;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
   background-color: rgb(152, 215, 158);
   border-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   box-shadow: 0 2px 4px #5a5a66;
   border: 2px solid #5a5a66;
 }
@@ -154,12 +156,16 @@ footer .footer-items .social-links div {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background-color: #77a4bb;
   margin: 0;
   font-family: sans-serif;
 }
 
 main {
+  flex: 1;
   color: rgb(46, 47, 51);
   margin: 1rem;
 }
