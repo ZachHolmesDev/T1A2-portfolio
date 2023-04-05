@@ -95,22 +95,28 @@ header nav .hamburger-menu {
 }
 footer {
   background-color: #7dcd85;
-  position: fixed;
   width: 100%;
-  bottom: 0vh;
+  bottom: 0;
 }
 footer .footer-items {
   padding-left: 1rem;
   padding-right: 1rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 0.4rem;
   margin-bottom: 0.4rem;
 }
-footer .footer-items p {
-  font-size: 0.5rem;
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
+footer .footer-items .footer-details {
+  display: flex;
+}
+footer .footer-items .footer-details p {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+footer .footer-items .footer-details p:first-child {
+  margin-right: 1rem;
 }
 footer .footer-items .social-links {
   list-style: none;
@@ -152,7 +158,6 @@ footer .footer-items .social-links div {
 body {
   background-color: #77a4bb;
   margin: 0;
-  height: 2000px;
   font-family: sans-serif;
 }
 
