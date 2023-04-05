@@ -1,8 +1,17 @@
 .intro-hero {
     text-align: center;
     background-color: $secondary-accent;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px $secondary-background;
+    border: 2px solid $secondary-background;
+
 }
 
 .blog-section {
     text-align: center;
+    background-color: $secondary-accent;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px $secondary-background;
+    border: 2px solid $secondary-background;
+    padding: 1rem;
 }

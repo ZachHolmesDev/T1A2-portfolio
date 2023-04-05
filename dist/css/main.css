@@ -7,6 +7,7 @@
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
+  box-shadow: 0 2px 4px #5a5a66;
 }
 
 .button:hover {
@@ -134,18 +135,25 @@ footer .footer-items .social-links div {
 .intro-hero {
   text-align: center;
   background-color: rgb(152, 215, 158);
+  border-radius: 15px;
+  box-shadow: 0 2px 4px #5a5a66;
+  border: 2px solid #5a5a66;
 }
 
 .blog-section {
   text-align: center;
+  background-color: rgb(152, 215, 158);
+  border-radius: 15px;
+  box-shadow: 0 2px 4px #5a5a66;
+  border: 2px solid #5a5a66;
+  padding: 1rem;
 }
 
 body {
   background-color: #77a4bb;
   margin: 0;
   height: 2000px;
-  color: rgb(46, 47, 51);
-  font-family: monospace, sans-serif;
+  font-family: sans-serif;
 }
 
 main {
