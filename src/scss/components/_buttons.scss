@@ -4,3 +4,29 @@
 
 // Import the utility styles
 @import '../utils/functions';
+
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: $secondary-text;
+    background-color: $link-color;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+  }
+  
+  .button:hover {
+    background-color: #0062cc;
+  }
+  
+  .button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+  }
+  
+  .button:active {
+    transform: scale(0.95);
+  }
+  

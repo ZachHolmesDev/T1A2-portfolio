@@ -37,5 +37,18 @@ body {
 
 }
 
+main {
+    color: $primary-text;
+    margin: 1rem;
+
+    a {
+        color: $link-color;
+    }
+
+    hr {
+        background-color: $primary-text;
+        border-color: $secondary-text;
+    }
+}
 
 

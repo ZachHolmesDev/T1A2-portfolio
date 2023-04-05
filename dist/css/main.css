@@ -1,3 +1,27 @@
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #006dfc;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #0062cc;
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
 header {
   background-color: #7dcd85;
   display: flex;
@@ -32,7 +56,7 @@ header nav .nav-list li {
 }
 header nav a {
   text-decoration: none;
-  color: #5a5a66;
+  color: #ffffff;
   font-size: larger;
   font-weight: bolder;
   transition: color 0.4s ease-in-out;
@@ -56,7 +80,7 @@ header nav .hamburger-menu {
     top: 4rem;
     left: 0;
     width: 100%;
-    background-color: #7dcd85;
+    background-color: rgb(152, 215, 158);
     flex-direction: row;
     justify-content: space-around;
     padding: 0.4rem;
@@ -70,6 +94,50 @@ header nav .hamburger-menu {
 }
 footer {
   background-color: #7dcd85;
+  position: fixed;
+  width: 100%;
+  bottom: 0vh;
+}
+footer .footer-items {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+footer .footer-items p {
+  font-size: 0.5rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+footer .footer-items .social-links {
+  list-style: none;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  margin-right: 0.4rem;
+  padding: 0.6rem;
+}
+footer .footer-items .social-links i {
+  color: #ffffff;
+}
+footer .footer-items .social-links a {
+  text-decoration: none;
+}
+footer .footer-items .social-links div {
+  display: inline-flex;
+  width: 1rem;
+}
+
+.intro-hero {
+  text-align: center;
+  background-color: rgb(152, 215, 158);
+}
+
+.blog-section {
+  text-align: center;
 }
 
 body {
@@ -78,6 +146,18 @@ body {
   height: 2000px;
   color: rgb(46, 47, 51);
   font-family: monospace, sans-serif;
+}
+
+main {
+  color: rgb(46, 47, 51);
+  margin: 1rem;
+}
+main a {
+  color: #006dfc;
+}
+main hr {
+  background-color: rgb(46, 47, 51);
+  border-color: #ffffff;
 }
 
 /*# sourceMappingURL=main.css.map */

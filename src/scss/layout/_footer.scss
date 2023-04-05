@@ -8,4 +8,50 @@
 
 footer {
     background-color: $accent;
+
+    position: fixed;
+    width: 100%;
+    bottom: 0vh;
+
+    .footer-items {
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        display: flex;
+        justify-content: space-between;
+        margin-top: .4rem;
+        margin-bottom: .4rem;
+        p {
+            font-size: .5rem;
+            margin-top: .25rem;
+            margin-bottom: .25rem;
+        }
+        
+        .social-links {
+            list-style: none;
+            flex-direction: row;
+            justify-content: space-between;
+
+        
+            
+            margin-top: .25rem;
+            margin-bottom: .25rem;
+            margin-right: .4rem;
+            padding: .6rem;
+
+            i {
+                color: $secondary-text;
+                
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            div {
+                display: inline-flex;
+                width: 1rem;
+            }
+        }
+    }
 }
