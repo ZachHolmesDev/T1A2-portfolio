@@ -9,25 +9,39 @@
 .button {
     display: inline-block;
     padding: 10px 20px;
-    font-size: 18px;
+    padding: .1rem .7rem;
+
+
+    text-decoration: none;
+    font-size: 1.1rem;
+
     color: $secondary-text;
     background-color: $link-color;
+    border: solid 3px $link-color;
     border-radius: 50px;
-    transition: all 0.3s ease-in-out;
-    text-decoration: none;
     box-shadow: 0 2px 4px $secondary-background;
   }
   
+  button[type="submit"] {
+    display: inline-block;
+    padding: 10px 20px;
+    padding: .1rem .7rem;
+  
+  
+    text-decoration: none;
+    font-size: 1.1rem;
+  
+    color: $secondary-text;
+    background-color: $link-color;
+    border: solid 3px $link-color;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px $secondary-background;
+  }
+  
+
   .button:hover {
-    background-color: #0062cc;
-  }
-  
-  .button:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
-  }
-  
-  .button:active {
-    transform: scale(0.95);
+    background-color: #0088ff;
+    border: solid 3px $secondary-text;
+    transition: border-color 0.2s;
   }
   

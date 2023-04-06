@@ -39,18 +39,15 @@ footer {
             list-style: none;
             flex-direction: row;
             justify-content: space-between;
+            align-items: center;
             
-            margin-right: .4rem;
-
             i {
                 color: $secondary-text;
             }
-
             a {
                 text-decoration: none;
                 margin-left: 1rem;
             }
-
             div {
                 display: inline-flex;
                 width: 1rem;
