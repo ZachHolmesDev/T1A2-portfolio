@@ -1,33 +1,128 @@
-<section class="about">
-  <h2>About Me</h2>
-  <p>
-    About Me: Hi, I'm Zach Holmes, an aspiring full-stack web developer and
-    cybersecurity student currently serving as the head of IT for a small
-    business with 10 staff members.
-  </p>
-  <p>
-    My journey began with a strong curiosity for problem-solving and a passion
-    for creating innovative solutions. As a student of full-stack web
-    development and cybersecurity pen testing, I'm committed to continuous
-    learning and adapting to the latest industry trends.
-  </p>
-  <p>
-    I have a particular interest in radio mesh networks and their potential to
-    enhance communication and data sharing in non-permissive environments. The
-    integration of mesh radios with ATAK (Android Team Awareness Kit) presents a
-    powerful solution, offering real-time situational awareness and secure,
-    decentralized communication in various scenarios.
-  </p>
-  <p>
-    When I'm not immersed in tech projects or managing IT operations, I enjoy
-    exploring the great outdoors.
-  </p>
-  <p>
-    Let's connect and discuss how we can leverage technology, such as mesh
-    radios and ATAK, to build a safer, more connected world together.
-  </p>
-</section>
-<article class="resume">
-  <h2>Resume</h2>
-  <a href="#">Download Resume PDF</a>
-</article>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevSecZach</title>
+    <!-- fonts and icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=|Red+Hat+Display|Work+Sans|IBM+Plex+Sans|Barlow|Crimson+Text|Roboto|Fira+Code|Raleway&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- css sheet done with scss -->
+    <link rel="stylesheet" href="../dist/css/main.css" />
+    <!-- js for hurger menu -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha384-7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../src/js/main.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="title">
+        <h1>devSecZach</h1>
+      </div>
+      <nav>
+        <div class="hamburger-menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-menu"
+          >
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </div>
+        <ul class="nav-list">
+          <li><a href="index.html">HOME</a></li>
+          <!-- <li><a href="about.html">ABOUT</a></li> -->
+          <li><a href="projects.html">PROJECTS</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <main class="about-main">
+      <section class="about">
+        <h2>About Me</h2>
+        <p>
+          About Me: Hi, I'm Zach Holmes, an aspiring full-stack web developer and
+          cybersecurity student currently serving as the head of IT for a small
+          business with 10 staff members.
+        </p>
+        <p>
+          My journey began with a strong curiosity for problem-solving and a passion
+          for creating innovative solutions. As a student of full-stack web
+          development and cybersecurity pen testing, I'm committed to continuous
+          learning and adapting to the latest industry trends.
+        </p>
+        <p>
+          I have a particular interest in radio mesh networks and their potential to
+          enhance communication and data sharing in non-permissive environments. The
+          integration of mesh radios with ATAK (Android Team Awareness Kit) presents a
+          powerful solution, offering real-time situational awareness and secure,
+          decentralized communication in various scenarios.
+        </p>
+        <p>
+          When I'm not immersed in tech projects or managing IT operations, I enjoy
+          exploring the great outdoors.
+        </p>
+        <p>
+          Let's connect and discuss how we can leverage technology, such as mesh
+          radios and ATAK, to build a safer, more connected world together.
+        </p>
+      </section>
+      <article class="resume">
+        <h2>Resume</h2>
+        <a href="#">Download Resume PDF</a>
+      </article>
+    </main>
+
+
+    <footer>
+      <div class="footer-items">
+        <div class="footer-details">
+          <p>
+            123 Main St<br />
+            City, State Zip<br />
+            &copy; 2023 Zach Holmes
+          <p/>
+            <b>Contact details</b> <br>
+            Phone: <u>(123) 456-7890</u><br />
+            Email: <u>me@email.com</u> <br />
+          </p>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/ title="Visit my GitHub profile">
+            <i class="fa-brands fa-github fa-2xl"> </i>
+          </a>
+          <a href="https://au.linkedin.com/" title="Connect with me on LinkedIn">
+            <i class="fa-brands fa-linkedin fa-2xl"> </i>
+          </a>
+        </div>
+    </footer>
+  </body>
+</html>
+

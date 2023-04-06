@@ -37,7 +37,7 @@ form {
   border: solid 3px #7dcd85;
   border-radius: 8px;
   padding: 0.7rem;
-  background-color: rgba(125, 205, 133, 0.5725490196);
+  background-color: rgba(125, 204, 133, 0.2509803922);
 }
 
 label {
@@ -61,7 +61,7 @@ input:focus,
 textarea:focus,
 select:focus {
   outline: none;
-  border-color: rgb(46, 47, 51);
+  border-color: #2e2f33;
 }
 
 textarea {
@@ -189,7 +189,7 @@ footer .footer-items .social-links div {
   text-align: center;
   padding-left: 1.2rem;
   padding-right: 1.2rem;
-  background-color: #98d79e;
+  background-color: rgba(125, 204, 133, 0.2509803922);
   border-radius: 15px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -199,11 +199,17 @@ footer .footer-items .social-links div {
 
 .blog-section {
   text-align: center;
-  background-color: #98d79e;
+  background-color: rgba(125, 204, 133, 0.2509803922);
   border-radius: 15px;
   box-shadow: 0 2px 4px #5a5a66;
   border: 2px solid #5a5a66;
   padding: 1rem;
+  background-color: rgba(125, 204, 133, 0.0809803922);
+}
+
+.about-main {
+  background: url("../images/subtle-prism.svg") center center no-repeat;
+  background-size: cover;
 }
 
 .contact-main {
@@ -230,14 +236,16 @@ body {
 
 main {
   flex: 1;
-  color: rgb(46, 47, 51);
+  color: #2e2f33;
   padding: 1rem;
+  background: url("../images/subtle-prism.svg") center center no-repeat;
+  background-size: cover;
 }
 main a {
   color: #006dfc;
 }
 main hr {
-  background-color: rgb(46, 47, 51);
+  background-color: #2e2f33;
   border-color: #ffffff;
 }
 
