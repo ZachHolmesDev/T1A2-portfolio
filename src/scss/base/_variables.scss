@@ -1,6 +1,7 @@
 // _colors.scss
 
 $background: #77a4bbff; // Air Superiority Blue
+$background-transparent: transparentize($background, $amount: .5);
 $secondary-background: #5a5a66ff; // Davy's Gray
 $accent: #7dcd85ff; // Emerald
 $accent-opaque: #7dcc8540; // Emerald
