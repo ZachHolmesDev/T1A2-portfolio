@@ -5,14 +5,26 @@
 
 
 // styles for the aticle pages
-.blog-post1-main {
+.blog-post-main {
     display: flex;
     flex-direction: column;
     align-items: center;
     
+    .article-title {
+      font-size: 1rem;
+      line-height: 1.2;
+      margin: 0;
+      text-align: center;
+      text-decoration: underline;
+
+        h1 {
+            margin: 0;
+        }
+
+    }
     .article-content {
       max-width: 90%;
-      padding: 20px;
+    //   padding: 1rem;
       
       img {
         max-width: 100%;
@@ -20,20 +32,21 @@
         margin-bottom: 20px;
       }
       
-      h1 {
-        font-size: 28px;
-        line-height: 1.2;
-        margin-bottom: 20px;
-        text-align: center;
-        text-decoration: underline;
-      }
       
       .article-text {
         flex-direction: column;
         background-color: $background-transparent;
         border-radius: 8px;
         padding: .5rem;
+
+        h2 {
+            margin: 0;
+        }
         
+        h5 {
+            margin: 1rem;
+        }
+
         h3 {
           font-size: rem;
           margin-bottom: 10px;
@@ -52,29 +65,53 @@
     // Styles for desktop view
     @media screen and (min-width: 768px) {
         
-        h1 {
-          font-size: 3rem;
-          margin-bottom: 20px;
+        .article-title {
+          font-size: 1.5rem;
+          margin-bottom: .5rem;
           text-align: left;
           text-decoration: underline;
         }
 
       .article-content {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-
-        img {
-          max-width: 27%;
-          margin: 3rem;
-          margin-bottom: 0;
-        }
-
-        .article-text {
-            flex-direction: column;
+          
+          
+          .article-text {
+              width: 100%;
+              display: flex;
+              flex-direction: row;
+              align-items: flex-start;
+            //   padding: 0;
+              flex-direction: column;
             // width: 80vw;
             
+            img {
+              max-width: 35%;
+              margin-right: 3rem;
+              margin-bottom: 0;
+              float: left;
+            //   display: inline;
+
+            }
+
+            .article-head {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                margin-bottom: .5rem;
+                
+                h2 {
+                    margin: 0;
+                    // display: inline-block;
+                }
+                
+                h5 {
+                    text-align: end;
+                    margin: 0;
+                    // display: inline;
+                }
+            }
+
             h3 {
             //   font-size: 1rem;
             //   margin-bottom: 10px;

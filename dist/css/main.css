@@ -211,69 +211,90 @@ footer .footer-items .social-links div {
   background-size: cover;
 }
 
-.blog-post1-main {
+.blog-post-main {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.blog-post1-main .article-content {
-  max-width: 90%;
-  padding: 20px;
+.blog-post-main .article-title {
+  font-size: 1rem;
+  line-height: 1.2;
+  margin: 0;
+  text-align: center;
+  text-decoration: underline;
 }
-.blog-post1-main .article-content img {
+.blog-post-main .article-title h1 {
+  margin: 0;
+}
+.blog-post-main .article-content {
+  max-width: 90%;
+}
+.blog-post-main .article-content img {
   max-width: 100%;
   height: auto;
   margin-bottom: 20px;
 }
-.blog-post1-main .article-content h1 {
-  font-size: 28px;
-  line-height: 1.2;
-  margin-bottom: 20px;
-  text-align: center;
-  text-decoration: underline;
-}
-.blog-post1-main .article-content .article-text {
+.blog-post-main .article-content .article-text {
   flex-direction: column;
   background-color: rgba(119, 164, 187, 0.5);
   border-radius: 8px;
   padding: 0.5rem;
 }
-.blog-post1-main .article-content .article-text h3 {
+.blog-post-main .article-content .article-text h2 {
+  margin: 0;
+}
+.blog-post-main .article-content .article-text h5 {
+  margin: 1rem;
+}
+.blog-post-main .article-content .article-text h3 {
   font-size: rem;
   margin-bottom: 10px;
   text-align: left;
 }
-.blog-post1-main .article-content .article-text p {
+.blog-post-main .article-content .article-text p {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px;
   text-align: justify;
 }
 @media screen and (min-width: 768px) {
-  .blog-post1-main h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+  .blog-post-main .article-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
     text-align: left;
     text-decoration: underline;
   }
-  .blog-post1-main .article-content {
+  .blog-post-main .article-content .article-text {
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-  }
-  .blog-post1-main .article-content img {
-    max-width: 27%;
-    margin: 3rem;
-    margin-bottom: 0;
-  }
-  .blog-post1-main .article-content .article-text {
     flex-direction: column;
   }
-  .blog-post1-main .article-content .article-text h3 {
+  .blog-post-main .article-content .article-text img {
+    max-width: 35%;
+    margin-right: 3rem;
+    margin-bottom: 0;
+    float: left;
+  }
+  .blog-post-main .article-content .article-text .article-head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+  }
+  .blog-post-main .article-content .article-text .article-head h2 {
+    margin: 0;
+  }
+  .blog-post-main .article-content .article-text .article-head h5 {
+    text-align: end;
+    margin: 0;
+  }
+  .blog-post-main .article-content .article-text h3 {
     text-align: left;
   }
-  .blog-post1-main .article-content .article-text p {
+  .blog-post-main .article-content .article-text p {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 20px;
