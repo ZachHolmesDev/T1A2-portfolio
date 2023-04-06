@@ -61,7 +61,7 @@ input:focus,
 textarea:focus,
 select:focus {
   outline: none;
-  border-color: #2e2f33;
+  border-color: #111113;
 }
 
 textarea {
@@ -218,9 +218,7 @@ footer .footer-items .social-links div {
   align-items: center;
 }
 .blog-post1-main .article-content {
-  max-width: 800px;
-  width: 90%;
-  margin: 0 auto;
+  max-width: 90%;
   padding: 20px;
 }
 .blog-post1-main .article-content img {
@@ -229,32 +227,58 @@ footer .footer-items .social-links div {
   margin-bottom: 20px;
 }
 .blog-post1-main .article-content h1 {
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.2;
   margin-bottom: 20px;
+  text-align: center;
+  text-decoration: underline;
 }
-.blog-post1-main .article-content h2 {
-  font-size: 24px;
-  line-height: 1.2;
+.blog-post1-main .article-content .article-text {
+  flex-direction: column;
+  background-color: rgba(125, 204, 133, 0.2509803922);
+  padding: 0.5rem;
+}
+.blog-post1-main .article-content .article-text h2 {
+  font-size: rem;
   margin-bottom: 10px;
+  text-align: left;
 }
-.blog-post1-main .article-content p {
+.blog-post1-main .article-content .article-text p {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px;
+  text-align: justify;
 }
-@media screen and (max-width: 767px) {
-  .blog-post1-main .article-content h1 {
-    font-size: 28px;
-    margin-bottom: 10px;
+@media screen and (min-width: 768px) {
+  .blog-post1-main h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: left;
+    text-decoration: underline;
   }
-  .blog-post1-main .article-content h2 {
-    font-size: 20px;
-    margin-bottom: 5px;
+  .blog-post1-main .article-content {
+    max-width: 800px;
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
   }
-  .blog-post1-main .article-content p {
-    font-size: 14px;
-    margin-bottom: 10px;
+  .blog-post1-main .article-content img {
+    max-width: 50%;
+    margin: 3rem;
+    margin-bottom: 0;
+  }
+  .blog-post1-main .article-content .article-text {
+    flex-direction: column;
+  }
+  .blog-post1-main .article-content .article-text h2 {
+    text-align: left;
+  }
+  .blog-post1-main .article-content .article-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: justify;
   }
 }
 
@@ -282,7 +306,7 @@ body {
 
 main {
   flex: 1;
-  color: #2e2f33;
+  color: #111113;
   padding: 1rem;
   background: url("../images/subtle-prism.svg") center center no-repeat;
   background-size: cover;
@@ -291,7 +315,7 @@ main a {
   color: #006dfc;
 }
 main hr {
-  background-color: #2e2f33;
+  background-color: #111113;
   border-color: #ffffff;
 }
 
