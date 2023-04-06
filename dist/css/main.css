@@ -34,9 +34,10 @@ form {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border: solid 2px rgb(152, 215, 158);
-  border-radius: 25px;
+  border: solid 3px #7dcd85;
+  border-radius: 8px;
   padding: 0.7rem;
+  background-color: rgba(125, 205, 133, 0.5725490196);
 }
 
 label {
@@ -179,11 +180,16 @@ footer .footer-items .social-links div {
   width: 1rem;
 }
 
+.home-main {
+  background: url("../images/subtle-prism.svg") center center no-repeat;
+  background-size: cover;
+}
+
 .intro-hero {
   text-align: center;
   padding-left: 1.2rem;
   padding-right: 1.2rem;
-  background-color: rgb(152, 215, 158);
+  background-color: #98d79e;
   border-radius: 15px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -193,11 +199,16 @@ footer .footer-items .social-links div {
 
 .blog-section {
   text-align: center;
-  background-color: rgb(152, 215, 158);
+  background-color: #98d79e;
   border-radius: 15px;
   box-shadow: 0 2px 4px #5a5a66;
   border: 2px solid #5a5a66;
   padding: 1rem;
+}
+
+.contact-main {
+  background: url("../images/subtle-prism.svg") center center no-repeat;
+  background-size: cover;
 }
 
 .contact-intro {
@@ -220,7 +231,7 @@ body {
 main {
   flex: 1;
   color: rgb(46, 47, 51);
-  margin: 1rem;
+  padding: 1rem;
 }
 main a {
   color: #006dfc;

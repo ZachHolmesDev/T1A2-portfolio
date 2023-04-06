@@ -12,9 +12,11 @@ form {
   flex-wrap: wrap;
   justify-content: center;
 
-  border: solid 2px $secondary-accent;
-  border-radius: 25px;
+  border: solid 3px $accent;
+  border-radius: 8px;
   padding: .7rem;
+  background-color: $accent-opaque;
+  // opacity: .5;
 }
 
 label {
