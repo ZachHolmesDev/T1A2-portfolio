@@ -1,4 +1,13 @@
-// styles for the aticle pages
+
+
+
+
+
+
+
+
+
+// all below styles the aticle pages themselves
 .blog-post-content {
     display: flex;
     flex-direction: column;
@@ -9,7 +18,7 @@
         //   line-height: 1.2;
         margin: 0;
         text-align: center;
-        text-decoration: underline;
+        // text-decoration: underline;
 
         h1 {
             font-size: 2rem;
@@ -20,26 +29,28 @@
             
         }
     }
+
     .article-content {
-        width: 100%;
         //   padding: 1rem;
         
-
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-        }
-
+        
         .article-text {
+            width: 100%;
             flex-direction: column;
-            background-color: $background-transparent;
+            background-image: $background-transparent-gradient;
+            // background-color: $background-transparent;
             border-radius: 8px;
             padding: 0.5rem;
             text-align: center;
+            
+            img {
+                max-width: 100%;
+                height: auto;
+                margin-bottom: .5rem;
+            }
 
             h2 {
-                font-size: 1.5rem;
+                font-size: 1.4rem;
                 margin: 0;
             }
 
@@ -65,31 +76,29 @@
     // Styles for desktop view
     @media screen and (min-width: 768px) {
         .article-title {
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-            text-align: left;
-            text-decoration: underline;
+
+            h1 {
+                font-size: 2.5rem;
+                margin-bottom: 0.5rem;
+            }
         }
 
         .article-content {
             .article-text {
+                
                 width: 100%;
-
-                display: flex-;
-                flex-direction: row;
                 align-items: flex-start;
-                //   padding: 0;
                 flex-direction: column;
                 flex-wrap: wrap;
-                // width: 80vw;
+                box-sizing: border-box;
+                padding: 1rem;
 
                 img {
-                    max-width: 35%;
+                    max-width: 27%;
                     margin-right: 1rem;
                     margin-top: 1rem;
                     margin-bottom: 0;
                     float: left;
-                    //   display: inline;
                 }
 
                 .article-head {
@@ -100,7 +109,9 @@
                     margin-bottom: 0.5rem;
 
                     h2 {
+                        font-size: 1.7rem;
                         margin: 0;
+                        margin-left: 1rem;
                         // display: inline-block;
                     }
 
@@ -121,7 +132,7 @@
                 p {
                     font-size: 16px;
                     line-height: 1.5;
-                    margin-bottom: 20px;
+                    margin-bottom: 0;
                     text-align: justify;
                 }
             }

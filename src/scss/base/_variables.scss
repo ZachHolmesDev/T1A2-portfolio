@@ -2,6 +2,7 @@
 
 $background: #77a4bbff; // Air Superiority Blue
 $background-transparent: transparentize($background, $amount: .5);
+$background-transparent-gradient: linear-gradient( #77a4bb00 , $background-transparent);
 $secondary-background: #5a5a66ff; // Davy's Gray
 
 $accent: #7dcd85ff; // Emerald
