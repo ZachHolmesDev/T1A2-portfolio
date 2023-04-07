@@ -218,10 +218,13 @@ footer .footer-items .social-links div {
 .blog-articles .article-preview {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .blog-articles .article-preview img {
-  max-width: 45%;
+  max-width: 28%;
   height: auto;
+  object-fit: contain;
 }
 
 .blog-post-content {

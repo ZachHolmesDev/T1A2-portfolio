@@ -1,26 +1,23 @@
 
 
 .blog-articles {
-    
     display: flex;
     flex-direction: column;
-    // box-sizing: border-box;
-    .article-preview {
-
-        // width: 100%;
     
+    .article-preview {
         display: flex;
         flex-direction: row;
-    
+        justify-content: space-between;
+        align-items: center;
+      
         img {
-            max-width: 45%;
-            height: auto;
-            // flex-shrink: 1;
-            // box-sizing: border-box;
+          max-width: 28%;
+          height: auto;
+          object-fit: contain;
         }
-    }
+      
+      }      
 }
-
 
 
 
