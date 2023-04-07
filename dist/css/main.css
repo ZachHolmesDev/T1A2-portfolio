@@ -157,19 +157,20 @@ footer .footer-items .footer-details {
 footer .footer-items .footer-details p {
   font-size: 0.75rem;
   margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
+  text-align: left;
 }
 footer .footer-items .footer-details p:first-child {
-  margin-right: 1rem;
+  margin-right: 0.7rem;
 }
 footer .footer-items .social-links {
-  list-style: none;
-  flex-direction: row;
-  justify-content: space-between;
+  display: flex;
   align-items: center;
+  margin-top: 10px;
 }
 footer .footer-items .social-links i {
   color: #ffffff;
+  font-size: 2.6rem;
 }
 footer .footer-items .social-links a {
   text-decoration: none;
@@ -178,6 +179,12 @@ footer .footer-items .social-links a {
 footer .footer-items .social-links div {
   display: inline-flex;
   width: 1rem;
+}
+footer .copy {
+  margin: 0;
+  margin-left: 1rem;
+  margin-bottom: 0.2rem;
+  font-size: xx-small;
 }
 
 .home-main {
@@ -216,7 +223,7 @@ footer .footer-items .social-links div {
   flex-direction: column;
 }
 .blog-articles .article-preview {
-  max-height: 10%;
+  max-height: 10;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
