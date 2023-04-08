@@ -360,10 +360,15 @@ footer .copy {
     max-width: 45%;
   }
   .projects-main .projects-articles .article-preview .post-preview-text h4 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+  }
+  .projects-main .projects-articles .article-preview .post-preview-text P {
+    font-size: 1.2rem;
+    margin-top: 1rem;
   }
   .projects-main .projects-articles .article-preview img {
     max-width: 30%;
+    max-height: 173px;
   }
 }
 .blog-main {
@@ -454,6 +459,9 @@ footer .copy {
   }
   .blog-main .blog-articles .article-preview .post-preview-text h4 {
     font-size: 1.4rem;
+  }
+  .blog-main .blog-articles .article-preview p {
+    font-size: 1rem;
   }
   .blog-main .blog-articles .article-preview img {
     max-width: 30%;
