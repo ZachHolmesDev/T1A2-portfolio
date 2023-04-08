@@ -8,7 +8,7 @@
         color: $primary-text;
     }
 
-    .blog-articles {
+    .projects-articles {
         display: flex;
         flex-direction: column;
 
@@ -71,7 +71,7 @@
 
 // blog homepage desktop view
 @media screen and (min-width: 769px) {
-    .blog-main {
+    .projects-main {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -81,27 +81,27 @@
             max-width: 30%;
             color: $primary-text;
         }
-    }
-    .blog-articles {
-        max-width: 50%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-
-        margin-top: 1.5rem;
-
-        .article-preview {
-            max-width: 45%;
-
-            .post-preview-text {
-                h4 {
-                    font-size: 1.4rem;
+        .projects-articles {
+            max-width: 70%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+    
+            margin-top: 1.5rem;
+    
+            .article-preview {
+                max-width: 45%;
+    
+                .post-preview-text {
+                    h4 {
+                        font-size: 1.4rem;
+                    }
                 }
-            }
-
-            img {
-                max-width: 30%;
+    
+                img {
+                    max-width: 30%;
+                }
             }
         }
     }
