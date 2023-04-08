@@ -3,13 +3,69 @@
 //     background-size: cover;
 // }
 
+.contact-main {
+    .contact-title {
+        text-align: center;
+        color: $secondary-text;
+    }
 
-
-.contact-intro {
-    text-align: center;
+    .contact-content {
+        .contact-form {
+            p {
+                font-size: 1.2rem;
+                text-align: center;
+            }
+        }
+        .pics {
+            img {
+                width: 100%;
+            }
+        }
+    }
 }
 
 #send-button {
     // width: 30vw;
     font-weight: 600;
+}
+
+@media (min-width: 768px) {
+    .contact-main {
+        // display: flex;
+        // flex-direction: row;
+        // justify-content: space-around;
+        // align-items: center;
+
+        .contact-content {
+
+            display: flex;
+            justify-content: space-around;
+
+            .contact-form {
+                width: 30%;
+                // display: inline-flex;
+                // flex-direction: column;
+                // margin-bottom: 0;
+    
+                padding: 1.5rem;
+    
+                // p {
+    
+                // padding: 0.5rem;
+                // font-size: 1.2rem;
+    
+                // }
+            }
+    
+            .pics {
+                display: inline-flex;
+                flex-direction: column;
+                align-items: center;
+    
+                img {
+                    max-width: 30rem;
+                }
+            }
+        }
+    }
 }
