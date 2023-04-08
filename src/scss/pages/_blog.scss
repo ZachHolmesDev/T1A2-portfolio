@@ -22,10 +22,13 @@
             margin-top: 1rem;
             margin-bottom: 1rem;
 
-            background-color: $background-transparent;
-            padding: 0.4rem;
-            border: solid $background;
-            border-radius: 15px;
+            @include card-bg($border-color: $secondary-background, $border-radius: 15px, $background-gradient: $background-transparent-gradient);
+            &:hover {
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+                transform: translateY(-4px);
+              }
+
+              padding: 1rem;
 
             .post-preview-text {
                 display: flex;
@@ -60,7 +63,7 @@
             }
 
             img {
-                width: 24%;
+                width: 28%;
                 height: auto;
                 object-fit: contain;
                 margin: 0.2rem;

@@ -1,47 +1,44 @@
 // Import the base styles
-@import '../base/variables';
-@import '../base/reset';
+@import "../base/variables";
+@import "../base/reset";
 
 // Import the utility styles
-@import '../utils/functions';
-
+@import "../utils/functions";
 
 .button {
-    display: inline-block;
-    padding: 10px 20px;
-    padding: .1rem .7rem;
+  display: inline-block;
+  padding: 10px 20px;
+  padding: 0.1rem 0.7rem;
 
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
 
-    color: $secondary-text;
-    background-color: $link-color;
-    border: solid 3px $link-color;
-    border-radius: 50px;
-    box-shadow: 0 2px 4px $secondary-background;
-  }
-  
-  button[type="submit"] {
-    display: inline-block;
-    padding: 10px 20px;
-    padding: .1rem .7rem;
-  
-  
-    text-decoration: none;
-    font-size: 1.1rem;
-  
-    color: $secondary-text;
-    background-color: $link-color;
-    border: solid 3px $link-color;
-    border-radius: 50px;
-    box-shadow: 0 2px 4px $secondary-background;
-  }
-  
+  color: $secondary-text;
+  background-color: $accent;
+  border: solid 3px $accent;
+  border-radius: 50px;
+  box-shadow: 0 2px 4px $secondary-background;
+}
 
-  .button:hover {
-    background-color: #0088ff;
-    border: solid 3px $secondary-text;
-    transition: border-color 0.2s;
-  }
-  
+button[type="submit"] {
+  display: inline-block;
+  padding: 10px 20px;
+  padding: 0.1rem 0.7rem;
+
+  text-decoration: none;
+  font-size: 1.1rem;
+
+  color: $secondary-text;
+  background-color: $accent;
+  border: solid 3px $accent;
+  border-radius: 50px;
+  box-shadow: 0 2px 4px $secondary-background;
+}
+
+.button:hover,
+button[type="submit"]:hover {
+  background-color: $secondary-accent;
+  border: solid 3px $secondary-accent;
+  transition: background-color 0.2s, border-color 0.2s;
+}
