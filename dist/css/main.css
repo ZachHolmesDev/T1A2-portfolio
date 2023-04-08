@@ -204,7 +204,7 @@ footer .copy {
   border: 2px solid #5a5a66;
 }
 
-.blog-section {
+.blog-intro {
   text-align: center;
   background-color: rgba(119, 164, 187, 0.5);
   border-radius: 15px;
@@ -278,14 +278,15 @@ footer .copy {
   flex-direction: column;
 }
 .blog-articles .article-preview {
-  max-height: 10;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   background-color: rgba(119, 164, 187, 0.5);
   padding: 0.8rem;
+  border: solid black;
   border-radius: 15px;
 }
 .blog-articles .article-preview .post-preview-text {
@@ -318,6 +319,33 @@ footer .copy {
   border-radius: 15px;
 }
 
+@media screen and (min-width: 768px) {
+  .blog-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+  }
+  .blog-main .blog-intro {
+    max-width: 30%;
+  }
+  .blog-articles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+  }
+  .blog-articles .article-preview {
+    max-width: 40%;
+  }
+  .blog-articles .article-preview .post-preview-text a {
+    text-decoration: none;
+  }
+  .blog-articles .article-preview img {
+    max-width: 25%;
+  }
+}
 .blog-post-content {
   display: flex;
   flex-direction: column;
@@ -429,7 +457,7 @@ footer .copy {
   font-weight: 600;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .contact-main .contact-content {
     display: flex;
     justify-content: space-around;
