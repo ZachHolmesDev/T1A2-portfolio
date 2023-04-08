@@ -3,6 +3,10 @@
 @import 'base/_typography';
 @import 'base/_variables';
 
+// Import utility styles
+@import 'utils/_mixins';
+@import 'utils/_functions';
+
 // Import component styles
 @import 'components/_buttons';
 @import 'components/_cards';
@@ -20,9 +24,6 @@
 @import 'pages/_blog';
 @import 'pages/_contact';
 
-// Import utility styles
-@import 'utils/_mixins';
-@import 'utils/_functions';
 
 
 // The main stylesheet any styles it defines

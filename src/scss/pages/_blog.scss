@@ -16,10 +16,10 @@
         justify-content: space-between;
         align-items: center;
 
-        padding: .8rem;
         margin-bottom: 1rem;
-
+        
         background-color: $background-transparent;
+        padding: .8rem;
         border-radius: 15px;
         
         .post-preview-text {
@@ -64,12 +64,6 @@
       }      
 }
 
-
-
-
-
-
-
 // ----------------------------------------------------------------------
 // all below styles the aticle pages themselves
 .blog-post-content {
@@ -85,7 +79,6 @@
             font-size: 2rem;
             margin-top: 0;
             margin-bottom: 0.5rem;
-
             color: $secondary-text;
         }
     }
@@ -93,8 +86,8 @@
     .article-content {
         width: 100%;
         flex-direction: column;
-        background-image: $background-transparent-gradient;
-        border-radius: 8px;
+        @include card-bg($background-transparent, 15px, $background-transparent-gradient);
+
         padding: 0.5rem;
         text-align: center;
 

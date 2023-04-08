@@ -34,10 +34,10 @@ form {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border: solid 3px #7dcd85;
-  border-radius: 8px;
+  border: solid 4px rgba(119, 164, 187, 0.5);
+  border-radius: 15px;
+  background-image: linear-gradient(rgba(119, 164, 187, 0.1333333333), rgba(119, 164, 187, 0.5));
   padding: 0.7rem;
-  background-color: rgba(125, 204, 133, 0.2509803922);
 }
 
 label {
@@ -216,6 +216,9 @@ footer .copy {
 /* About section */
 .about-main .about {
   margin-bottom: 1rem;
+  border: solid 4px rgba(119, 164, 187, 0.5);
+  background-image: linear-gradient(rgba(119, 164, 187, 0.1333333333), rgba(119, 164, 187, 0.5));
+  border-radius: 15px;
 }
 .about-main h2 {
   font-size: 1.6rem;
@@ -255,6 +258,7 @@ footer .copy {
     display: inline-flex;
     flex-direction: column;
     margin-bottom: 0;
+    padding: 1.5rem;
   }
   .about-main .about p {
     padding: 0.5rem;
@@ -279,9 +283,9 @@ footer .copy {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0.8rem;
   margin-bottom: 1rem;
   background-color: rgba(119, 164, 187, 0.5);
+  padding: 0.8rem;
   border-radius: 15px;
 }
 .blog-articles .article-preview .post-preview-text {
@@ -332,8 +336,9 @@ footer .copy {
 .blog-post-content .article-content {
   width: 100%;
   flex-direction: column;
-  background-image: linear-gradient(rgba(119, 164, 187, 0), rgba(119, 164, 187, 0.5));
-  border-radius: 8px;
+  border: solid 4px rgba(119, 164, 187, 0.5);
+  border-radius: 15px;
+  background-image: linear-gradient(rgba(119, 164, 187, 0.1333333333), rgba(119, 164, 187, 0.5));
   padding: 0.5rem;
   text-align: center;
 }
@@ -406,11 +411,6 @@ footer .copy {
     margin-bottom: 0;
     text-align: justify;
   }
-}
-
-.contact-main {
-  background: url("../images/subtle-prism.svg") center center no-repeat;
-  background-size: cover;
 }
 
 .contact-intro {

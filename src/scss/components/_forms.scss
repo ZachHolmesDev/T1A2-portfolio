@@ -1,9 +1,10 @@
 // Import the base styles
-@import '../base/variables';
-@import '../base/reset';
+// @import '../base/variables';
+// @import '../base/reset';
 
 // Import the utility styles
-@import '../utils/functions';
+// @import '../utils/functions';
+// @import '../utils/mixins';
 
 // Form Styles
 
@@ -12,11 +13,8 @@ form {
   flex-wrap: wrap;
   justify-content: center;
 
-  border: solid 3px $accent;
-  border-radius: 8px;
+  @include card-bg($background-transparent, 15px, $background-transparent-gradient);
   padding: .7rem;
-  background-color: $accent-opaque;
-  // opacity: .5;
 }
 
 label {

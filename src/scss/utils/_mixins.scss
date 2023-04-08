@@ -1,0 +1,8 @@
+
+
+@mixin card-bg($border-color, $border-radius, $background-gradient) {
+    border: solid 4px $border-color;
+    border-radius: $border-radius;
+    background-image: $background-gradient;
+  }
+  
