@@ -213,11 +213,69 @@ footer .copy {
   padding: 1rem;
 }
 
-.about-main {
-  background: url("../images/subtle-prism.svg") center center no-repeat;
-  background-size: cover;
+/* About section */
+.about-main .about {
+  margin-bottom: 1rem;
+}
+.about-main h2 {
+  font-size: 1.6rem;
+  margin: 0;
+}
+.about-main p {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+.about-main a {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+.about-main img {
+  max-width: 100%;
+  height: auto;
+}
+.about-main i {
+  color: #ffffff;
+  margin-left: 1rem;
+  font-size: 3rem;
 }
 
+/* Responsive design */
+@media (min-width: 768px) {
+  .about-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .about-main .about {
+    max-width: fit-content;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .about-main .about p {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+  }
+  .about-main .about p i {
+    padding-left: 2rem;
+  }
+  .about-main .pics {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-main .pics img {
+    max-width: 20%;
+  }
+  .about-main .pics h2 {
+    display: inline-block;
+  }
+}
 .blog-articles {
   display: flex;
   flex-direction: column;
