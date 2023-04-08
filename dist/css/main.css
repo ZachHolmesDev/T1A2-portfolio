@@ -273,11 +273,21 @@ footer .copy {
     max-width: 30rem;
   }
 }
-.blog-articles {
+.projects-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+.projects-main .blog-intro {
+  color: #111113;
+}
+.projects-main .blog-articles {
   display: flex;
   flex-direction: column;
 }
-.blog-articles .article-preview {
+.projects-main .blog-articles .article-preview {
+  min-height: 110px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -289,7 +299,7 @@ footer .copy {
   border: solid #77a4bb;
   border-radius: 15px;
 }
-.blog-articles .article-preview .post-preview-text {
+.projects-main .blog-articles .article-preview .post-preview-text {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -297,34 +307,33 @@ footer .copy {
   margin-left: 0.2rem;
   margin-right: 0.2rem;
 }
-.blog-articles .article-preview p {
+.projects-main .blog-articles .article-preview p {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 0.75rem;
   color: #111113;
 }
-.blog-articles .article-preview .ppt-heading {
+.projects-main .blog-articles .article-preview .ppt-heading {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.blog-articles .article-preview .ppt-heading h4 {
+.projects-main .blog-articles .article-preview .ppt-heading h4 {
   margin-bottom: 0;
   margin-top: 0;
   font-size: 1.1rem;
   color: #ffffff;
   display: inline;
 }
-.blog-articles .article-preview .ppt-heading .ppt-date {
+.projects-main .blog-articles .article-preview .ppt-heading .ppt-date {
   font-size: 0.7rem;
   margin-top: 0;
   color: #ffffff;
 }
-.blog-articles .article-preview img {
+.projects-main .blog-articles .article-preview img {
   width: 24%;
   height: auto;
   object-fit: contain;
-  border-radius: 15px;
   margin: 0.2rem;
 }
 
@@ -337,6 +346,100 @@ footer .copy {
   }
   .blog-main .blog-intro {
     max-width: 30%;
+    color: #111113;
+  }
+  .blog-articles {
+    max-width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+  }
+  .blog-articles .article-preview {
+    max-width: 45%;
+  }
+  .blog-articles .article-preview .post-preview-text h4 {
+    font-size: 1.4rem;
+  }
+  .blog-articles .article-preview img {
+    max-width: 30%;
+  }
+}
+.blog-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+.blog-main .blog-intro {
+  color: #111113;
+}
+.blog-main .blog-articles {
+  display: flex;
+  flex-direction: column;
+}
+.blog-main .blog-articles .article-preview {
+  min-height: 110px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: rgba(119, 164, 187, 0.5);
+  padding: 0.4rem;
+  border: solid #77a4bb;
+  border-radius: 15px;
+}
+.blog-main .blog-articles .article-preview .post-preview-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-self: stretch;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+}
+.blog-main .blog-articles .article-preview p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 0.75rem;
+  color: #111113;
+}
+.blog-main .blog-articles .article-preview .ppt-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.blog-main .blog-articles .article-preview .ppt-heading h4 {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: #ffffff;
+  display: inline;
+}
+.blog-main .blog-articles .article-preview .ppt-heading .ppt-date {
+  font-size: 0.7rem;
+  margin-top: 0;
+  color: #ffffff;
+}
+.blog-main .blog-articles .article-preview img {
+  width: 24%;
+  height: auto;
+  object-fit: contain;
+  margin: 0.2rem;
+}
+
+@media screen and (min-width: 769px) {
+  .blog-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+  }
+  .blog-main .blog-intro {
+    max-width: 30%;
+    color: #111113;
   }
   .blog-articles {
     max-width: 50%;
