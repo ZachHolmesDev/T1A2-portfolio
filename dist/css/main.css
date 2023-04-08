@@ -281,7 +281,7 @@ footer .copy {
   color: #ffffff;
 }
 .projects-main .blog-intro {
-  color: #111113;
+  color: #333333;
 }
 .projects-main .projects-articles {
   display: flex;
@@ -312,7 +312,7 @@ footer .copy {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 0.75rem;
-  color: #111113;
+  color: #333333;
 }
 .projects-main .projects-articles .article-preview .ppt-heading {
   display: flex;
@@ -347,7 +347,7 @@ footer .copy {
   }
   .projects-main .blog-intro {
     max-width: 30%;
-    color: #111113;
+    color: #333333;
   }
   .projects-main .projects-articles {
     max-width: 70%;
@@ -379,7 +379,7 @@ footer .copy {
   color: #ffffff;
 }
 .blog-main .blog-intro {
-  color: #111113;
+  color: #333333;
 }
 .blog-main .blog-articles {
   display: flex;
@@ -410,7 +410,7 @@ footer .copy {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 0.75rem;
-  color: #111113;
+  color: #333333;
 }
 .blog-main .blog-articles .article-preview .ppt-heading {
   display: flex;
@@ -445,7 +445,7 @@ footer .copy {
   }
   .blog-main .blog-intro {
     max-width: 30%;
-    color: #111113;
+    color: #333333;
   }
   .blog-main .blog-articles {
     max-width: 50%;
@@ -608,7 +608,7 @@ body {
 
 main {
   flex: 1;
-  color: #111113;
+  color: #333333;
   padding: 1rem;
   background: url("../images/subtle-prism.svg") center center no-repeat;
   background-size: cover;
@@ -617,7 +617,7 @@ main a {
   color: #006dfc;
 }
 main hr {
-  background-color: #111113;
+  background-color: #333333;
   border-color: #ffffff;
 }
 
