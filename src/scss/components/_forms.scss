@@ -14,7 +14,7 @@ form {
   justify-content: center;
 
   @include card-bg($background-transparent, 15px, $background-transparent-gradient);
-  padding: .7rem;
+  padding: 0.7rem;
 }
 
 label {
@@ -36,8 +36,7 @@ select {
 
   &:focus {
     outline: none;
-    border-color: $primary-text;
-    
+    border-color: black;
   }
 }
 
@@ -46,12 +45,9 @@ textarea {
   min-height: 100px;
 }
 
-
-
 // button[type="submit"]:hover {
 //   background-color: #0088ff;
 //   border: solid $primary-text;
 //   transition: border-color 0.2s;
 
 // }
-
