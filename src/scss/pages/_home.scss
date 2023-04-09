@@ -1,19 +1,42 @@
 .home-main {
-    background: url("#{$svg-path}") center center no-repeat;
-    background-size: cover;
+    // background: url("#{$svg-path}") center center no-repeat;
+    // background-size: cover;
+
+    padding-top: 0;
+    justify-content: flex-start;
+    // align-items: center;
 }
 
 
 .intro-hero {
+
+    width: 100vw;
+    // align-self: ;
+    // overflow: visible;
     text-align: center;
-    padding-left: 1.2rem;
-    padding-right: 1.2rem;
-    background-color: $background-transparent;
-    border-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    box-shadow: 0 2px 4px $secondary-background;
-    border: 2px solid $secondary-background;
+    // padding-left: 1.2rem;
+    // padding-right: 1.2rem;
+    background-image: $accent-transparent-gradient;
+    // border-radius: 15px;
+    border-bottom-left-radius: 170px;
+    border-bottom-right-radius: 170px;
+    padding-bottom: 5rem;
+    // border-: 15px;
+    // box-shadow: 0 2px 4px $secondary-background;
+    // border: 2px solid $secondary-background;
+    h1 {
+        margin-top: 0;
+        padding-top: 20px;
+        border-top: solid 2px;
+    }
+
+    p {
+        padding: 2rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        font-size: .8rem;
+    }
 
 }
 

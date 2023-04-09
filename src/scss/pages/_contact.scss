@@ -4,6 +4,8 @@
 // }
 
 .contact-main {
+    justify-content: space-around;
+
     .contact-title {
         text-align: center;
         color: $secondary-text;
@@ -11,7 +13,7 @@
 
     .contact-content {
         .contact-form {
-            p {
+            h2 {
                 font-size: 1.2rem;
                 text-align: center;
             }
@@ -19,6 +21,8 @@
         .pics {
             img {
                 width: 100%;
+                margin-top: 2rem;
+                margin-bottom: 1rem;
             }
         }
     }
@@ -30,6 +34,8 @@
 
 @media screen and (min-width: 768px) {
     .contact-main {
+
+        // justify-content: space-around;
         .contact-content {
             display: flex;
             justify-content: space-around;
