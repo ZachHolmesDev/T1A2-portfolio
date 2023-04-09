@@ -104,7 +104,7 @@
 
 // Desktop styles
 //-----------------------------------------------
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     .home-main {
         padding-top: 0;
         // flex-direction: row;
@@ -126,14 +126,23 @@
             .pri-content {
                 width: 100%;
                 display: flex;
+
                 flex-wrap: wrap;
                 justify-content: space-evenly;
+                // align-items: ;
 
                 .my-skills {
-                    align-self: center;
+                    // max-width: 20%;
+                    // align-self: center;
                     margin: 1rem;
+
+
                     
                     .skills-list {
+
+                        div {
+                            margin: .4rem;
+                        }
 
                         p {
                         }
@@ -154,8 +163,8 @@
             .blog-section {
                 max-width: 15vw;
                 min-width: 270px;
-                justify-self: flex-start;
-                align-self: center;
+                // justify-self: flex-start;
+                align-self: start;
     
                 .blog-list {
                     ul {

@@ -281,7 +281,7 @@ footer .copy {
   margin: 0rem;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .home-main {
     padding-top: 0;
     justify-content: flex-start;
@@ -298,14 +298,15 @@ footer .copy {
     justify-content: space-evenly;
   }
   .home-main .home-content .pri-content .my-skills {
-    align-self: center;
     margin: 1rem;
+  }
+  .home-main .home-content .pri-content .my-skills .skills-list div {
+    margin: 0.4rem;
   }
   .home-main .home-content .blog-section {
     max-width: 15vw;
     min-width: 270px;
-    justify-self: flex-start;
-    align-self: center;
+    align-self: start;
   }
 }
 .about-main .about {
