@@ -200,7 +200,7 @@ footer .copy {
 .intro-hero {
   width: 100vw;
   text-align: center;
-  background-image: linear-gradient(#7dcd85, rgba(119, 164, 187, 0.5));
+  background-image: linear-gradient(#7dcd85, rgba(119, 164, 187, 0.3098039216));
   border-bottom-left-radius: 170px;
   border-bottom-right-radius: 170px;
   padding-bottom: 5rem;
@@ -215,16 +215,37 @@ footer .copy {
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 0;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
 
-.blog-intro {
+.blog-section {
   text-align: center;
   background-color: rgba(119, 164, 187, 0.5);
   border-radius: 15px;
   box-shadow: 0 2px 4px #5a5a66;
   border: 2px solid #5a5a66;
   padding: 1rem;
+}
+.blog-section .blog-list {
+  text-align: left;
+}
+.blog-section .blog-list ul {
+  padding-left: 0rem;
+}
+.blog-section .blog-list ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.blog-section .blog-list ul li a {
+  font-size: 1.05rem;
+}
+.blog-section .blog-list ul li p {
+  width: 100%;
+  text-align: right;
+  font-size: 0.8rem;
+  margin: 0rem;
 }
 
 .about-main .about {
@@ -651,7 +672,9 @@ main {
   background-size: cover;
 }
 main a {
-  color: #006dfc;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
 }
 main hr {
   background-color: #333333;

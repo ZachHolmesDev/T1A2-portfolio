@@ -26,17 +26,47 @@
         padding-top: 0;
         padding-bottom: 0;
         margin-bottom: 0;
-        font-size: .8rem;
+        font-size: .85rem;
     }
 
 }
 
-.blog-intro {
+.blog-section {
     text-align: center;
     background-color: $background-transparent;
     border-radius: 15px;
     box-shadow: 0 2px 4px $secondary-background;
     border: 2px solid $secondary-background;
     padding: 1rem;
-    // background-color: transparentize($background, 0.17);
+
+    .blog-list {
+        text-align: left;
+
+        ul {
+            padding-left: 0rem;
+            
+
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 1rem;
+
+                a {
+                    font-size: 1.05rem;
+                }
+                p{
+                    width: 100%;
+                    // display: block;
+                    // align-self: ;
+                    text-align: right;
+                    font-size: .8rem;
+                    margin: 0rem;
+                    // margin-top: .25rem;
+                    // margin-bottom: .7rem;
+                }
+            }
+        }
+
+    }
 }
