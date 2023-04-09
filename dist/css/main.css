@@ -196,8 +196,7 @@ footer .copy {
   padding-top: 0;
   justify-content: flex-start;
 }
-
-.intro-hero {
+.home-main .intro-hero {
   width: 100vw;
   text-align: center;
   background-image: linear-gradient(#7dcd85, rgba(119, 164, 187, 0.3098039216));
@@ -205,20 +204,19 @@ footer .copy {
   border-bottom-right-radius: 170px;
   padding-bottom: 5rem;
 }
-.intro-hero h1 {
+.home-main .intro-hero h1 {
   margin-top: 0;
   padding-top: 20px;
   border-top: solid 2px #77a4bb;
 }
-.intro-hero p {
+.home-main .intro-hero p {
   padding: 2rem;
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 0;
   font-size: 0.85rem;
 }
-
-.blog-section {
+.home-main .my-skills {
   text-align: center;
   background-color: rgba(119, 164, 187, 0.5);
   border-radius: 15px;
@@ -226,22 +224,40 @@ footer .copy {
   border: 2px solid #5a5a66;
   padding: 1rem;
 }
-.blog-section .blog-list {
+.home-main .my-skills .skills-list {
   text-align: left;
 }
-.blog-section .blog-list ul {
+.home-main .my-skills .skills-list p {
+  width: 100%;
+  text-align: right;
+  font-size: 0.8rem;
+  margin: 0rem;
+}
+.home-main .blog-section {
+  text-align: center;
+  background-color: rgba(119, 164, 187, 0.5);
+  border-radius: 15px;
+  box-shadow: 0 2px 4px #5a5a66;
+  border: 2px solid #5a5a66;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.home-main .blog-section .blog-list {
+  text-align: left;
+}
+.home-main .blog-section .blog-list ul {
   padding-left: 0rem;
 }
-.blog-section .blog-list ul li {
+.home-main .blog-section .blog-list ul li {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 1rem;
 }
-.blog-section .blog-list ul li a {
+.home-main .blog-section .blog-list ul li a {
   font-size: 1.05rem;
 }
-.blog-section .blog-list ul li p {
+.home-main .blog-section .blog-list ul li p {
   width: 100%;
   text-align: right;
   font-size: 0.8rem;
