@@ -4,8 +4,14 @@
     align-items: center;
     color: $secondary-text;
 
-    .blog-intro {
-        color: $primary-text;
+    .projects-intro {
+        color: $secondary-text;
+        @include card-bg($background-transparent, 15px, $background-transparent-gradient);
+        p {
+            color: $primary-text;
+            // padding: 0.5rem;
+            text-align: center;
+        }
     }
 
     .projects-articles {
@@ -82,6 +88,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        
         // gap: 10px;
         color: $secondary-text;
 
@@ -91,16 +99,9 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-
-            p {
-                // text-align: center;
-                max-width: 30%;
-                color: $primary-text;
-
-                @include card-bg($background-transparent, 15px, $background-transparent-gradient);
-
-                padding: 0.5rem;
-                text-align: center;
+            max-width: 30%;
+            h1 {
+                font-family: 2rem;
             }
         }
         .projects-articles {

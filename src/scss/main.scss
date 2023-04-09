@@ -34,11 +34,11 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    // height: 2000px;
 
     background-color: $background;
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Armio', sans-serif;
+    font-weight: 500;
 }
 
 main {

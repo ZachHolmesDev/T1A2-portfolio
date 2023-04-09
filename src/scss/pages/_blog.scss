@@ -5,8 +5,16 @@
     color: $secondary-text;
 
     .blog-intro {
-        color: $primary-text;
-    }
+
+            color: $secondary-text;
+            @include card-bg($background-transparent, 15px, $background-transparent-gradient);
+            p {
+                color: $primary-text;
+                padding: 0.5rem;
+                text-align: center;
+            }
+        }
+    
 
     .blog-articles {
         display: flex;
