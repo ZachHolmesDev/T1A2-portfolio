@@ -24,7 +24,7 @@
             font-size: 0.85rem;
         }
     }
-    
+
     .my-skills {
         text-align: center;
         background-color: $background-transparent;
@@ -34,12 +34,29 @@
         padding: 1rem;
 
         .skills-list {
-            text-align: left;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
             p {
-                width: 100%;
-                text-align: right;
-                font-size: 0.8rem;
-                margin: 0rem;
+                font-size: 1.5rem;
+                margin-bottom: .7rem;
+            }
+            i {
+                font-size: 2.5rem;
+            }
+            .fa-html5 {
+                color: #F16524;
+            }
+            .fa-square-js {
+                color: #F7E018;
+            }
+            .fa-css3 {
+                color: #2465F1;
+            }
+            .fa-sass {
+                color: #BF4080;
+                margin-left: 1rem;
             }
         }
     }

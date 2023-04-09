@@ -225,13 +225,29 @@ footer .copy {
   padding: 1rem;
 }
 .home-main .my-skills .skills-list {
-  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .home-main .my-skills .skills-list p {
-  width: 100%;
-  text-align: right;
-  font-size: 0.8rem;
-  margin: 0rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.7rem;
+}
+.home-main .my-skills .skills-list i {
+  font-size: 2.5rem;
+}
+.home-main .my-skills .skills-list .fa-html5 {
+  color: #F16524;
+}
+.home-main .my-skills .skills-list .fa-square-js {
+  color: #F7E018;
+}
+.home-main .my-skills .skills-list .fa-css3 {
+  color: #2465F1;
+}
+.home-main .my-skills .skills-list .fa-sass {
+  color: #BF4080;
+  margin-left: 1rem;
 }
 .home-main .blog-section {
   text-align: center;
