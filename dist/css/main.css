@@ -216,46 +216,74 @@ footer .copy {
   margin-bottom: 0;
   font-size: 0.85rem;
 }
-.home-main .home-content .my-skills {
+.home-main .home-content .pri-card {
   text-align: center;
-  background-color: rgba(119, 164, 187, 0.5);
+  border: solid 4px #42424b;
   border-radius: 15px;
-  box-shadow: 0 2px 4px #5a5a66;
-  border: 2px solid #5a5a66;
+  background-image: linear-gradient(rgba(119, 164, 187, 0.1333333333), rgba(119, 164, 187, 0.5));
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
   padding: 1rem;
   margin-bottom: 1rem;
 }
-.home-main .home-content .my-skills .skills-list {
+.home-main .home-content .pri-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-4px);
+}
+.home-main .home-content .pri-card h2 {
+  color: #ffffff;
+}
+.home-main .home-content .pri-card .pri-card-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.home-main .home-content .my-skills .skills-list p {
+.home-main .home-content .pri-card .pri-card-content p {
   font-size: 1.5rem;
   margin-bottom: 0.7rem;
 }
-.home-main .home-content .my-skills .skills-list i {
+.home-main .home-content .pri-card .pri-card-content i {
   font-size: 2.5rem;
 }
-.home-main .home-content .my-skills .skills-list .fa-html5 {
+.home-main .home-content .pri-card .pri-card-content .fa-html5 {
   color: #f16524;
 }
-.home-main .home-content .my-skills .skills-list .fa-square-js {
+.home-main .home-content .pri-card .pri-card-content .fa-square-js {
   color: #f7e018;
 }
-.home-main .home-content .my-skills .skills-list .fa-css3 {
+.home-main .home-content .pri-card .pri-card-content .fa-css3 {
   color: #2465f1;
 }
-.home-main .home-content .my-skills .skills-list .fa-sass {
+.home-main .home-content .pri-card .pri-card-content .fa-sass {
   color: #bf4080;
   margin-left: 1rem;
 }
+.home-main .home-content .pri-card .pri-card-content .fa-raspberry-pi {
+  color: #cb244b;
+}
+.home-main .home-content .pri-card .pri-card-content .fa-cloud-sun {
+  color: gray;
+}
+.home-main .home-content .pri-card .pri-card-content .fa-network-wired {
+  color: blue;
+}
+.home-main .home-content .pri-card .pri-card-content .fa-address-card {
+  font-size: 7rem;
+  color: #7dcd85;
+}
+.home-main .home-content .pri-card .pri-card-content .fa-circle-question {
+  color: rgb(190, 102, 90);
+}
+.home-main .home-content .pri-card .pri-card-content .fa-file-import {
+  color: lightblue;
+}
 .home-main .blog-section {
   text-align: center;
-  background-color: rgba(119, 164, 187, 0.5);
+  border: solid 4px #42424b;
   border-radius: 15px;
-  box-shadow: 0 2px 4px #5a5a66;
-  border: 2px solid #5a5a66;
+  background-image: linear-gradient(rgba(119, 164, 187, 0.1333333333), rgba(119, 164, 187, 0.5));
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
   padding: 1rem;
   margin-top: 1rem;
 }
@@ -296,12 +324,30 @@ footer .copy {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
   }
-  .home-main .home-content .pri-content .my-skills {
+  .home-main .home-content .pri-content .pri-card {
     margin: 1rem;
   }
-  .home-main .home-content .pri-content .my-skills .skills-list div {
+  .home-main .home-content .pri-content .pri-card p {
+    font-size: 1.2rem;
+  }
+  .home-main .home-content .pri-content .pri-card .pri-card-content {
+    display: grid;
+  }
+  .home-main .home-content .pri-content .pri-card .pri-card-content div {
     margin: 0.4rem;
+  }
+  .home-main .home-content .pri-content .pri-card .pri-card-content i {
+    font-size: 3.5rem;
+  }
+  .home-main .home-content .pri-content .pri-card .pri-card-content .fa-address-card {
+    font-size: 8rem;
+    color: #7dcd85;
+  }
+  .home-main .home-content .pri-content .about .pri-card-content {
+    display: flex;
+    align-items: center;
   }
   .home-main .home-content .blog-section {
     max-width: 15vw;
@@ -747,7 +793,6 @@ main {
 }
 main a {
   color: #ffffff;
-  text-decoration: none;
   font-weight: bold;
 }
 main hr {

@@ -26,18 +26,25 @@
     }
 
     .home-content {
-        
-
-        .my-skills {
+        .pri-card {
             text-align: center;
-            background-color: $background-transparent;
-            border-radius: 15px;
-            box-shadow: 0 2px 4px $secondary-background;
-            border: 2px solid $secondary-background;
+            @include card-bg(
+                $border-color: $secondary-background,
+                $border-radius: 15px,
+                $background-gradient: $background-transparent-gradient
+            );
+            &:hover {
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+                transform: translateY(-4px);
+            }
+
             padding: 1rem;
             margin-bottom: 1rem;
 
-            .skills-list {
+            h2 {
+                color: $secondary-text;
+            }
+            .pri-card-content {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-around;
@@ -62,16 +69,37 @@
                     color: #bf4080;
                     margin-left: 1rem;
                 }
+                .fa-raspberry-pi {
+                    color: #cb244b;
+                }
+                .fa-cloud-sun {
+                    color: gray;
+                }
+                .fa-network-wired {
+                    color: blue;
+                }
+                .fa-address-card {
+                    font-size: 7rem;
+                    color: $accent;
+                }
+                .fa-circle-question {
+                    color: rgb(190, 102, 90);
+                }
+                .fa-file-import {
+                    color: lightblue;
+                }
             }
         }
     }
 
     .blog-section {
         text-align: center;
-        background-color: $background-transparent;
-        border-radius: 15px;
-        box-shadow: 0 2px 4px $secondary-background;
-        border: 2px solid $secondary-background;
+        @include card-bg(
+            $border-color: $secondary-background,
+            $border-radius: 15px,
+            $background-gradient: $background-transparent-gradient
+        );
+
         padding: 1rem;
         margin-top: 1rem;
 
@@ -129,24 +157,29 @@
 
                 flex-wrap: wrap;
                 justify-content: space-evenly;
-                // align-items: ;
+                align-items:center ;
 
-                .my-skills {
-                    // max-width: 20%;
-                    // align-self: center;
+                .pri-card {
                     margin: 1rem;
+                    // max-height: 25%;
+                    p {
+                        font-size: 1.2rem;
+                        // font-weight: 500;
+                    }
 
-
-                    
-                    .skills-list {
+                    .pri-card-content {
+                        display: grid;
 
                         div {
-                            margin: .4rem;
+                            margin: 0.4rem;
                         }
 
-                        p {
-                        }
                         i {
+                            font-size: 3.5rem;
+                        }
+                        .fa-address-card {
+                            font-size: 8rem;
+                            color: $accent;
                         }
                         .fa-html5 {
                         }
@@ -158,14 +191,19 @@
                         }
                     }
                 }
+                .about {
+                    .pri-card-content {
+                        display: flex;
+                        align-items: center;
+                    }
+                }
             }
-    
+
             .blog-section {
                 max-width: 15vw;
                 min-width: 270px;
-                // justify-self: flex-start;
                 align-self: start;
-    
+
                 .blog-list {
                     ul {
                         li {
