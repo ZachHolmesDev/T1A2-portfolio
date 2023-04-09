@@ -25,38 +25,43 @@
         }
     }
 
-    .my-skills {
-        text-align: center;
-        background-color: $background-transparent;
-        border-radius: 15px;
-        box-shadow: 0 2px 4px $secondary-background;
-        border: 2px solid $secondary-background;
-        padding: 1rem;
+    .home-content {
+        
 
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+        .my-skills {
+            text-align: center;
+            background-color: $background-transparent;
+            border-radius: 15px;
+            box-shadow: 0 2px 4px $secondary-background;
+            border: 2px solid $secondary-background;
+            padding: 1rem;
+            margin-bottom: 1rem;
 
-            p {
-                font-size: 1.5rem;
-                margin-bottom: .7rem;
-            }
-            i {
-                font-size: 2.5rem;
-            }
-            .fa-html5 {
-                color: #F16524;
-            }
-            .fa-square-js {
-                color: #F7E018;
-            }
-            .fa-css3 {
-                color: #2465F1;
-            }
-            .fa-sass {
-                color: #BF4080;
-                margin-left: 1rem;
+            .skills-list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+
+                p {
+                    font-size: 1.5rem;
+                    margin-bottom: 0.7rem;
+                }
+                i {
+                    font-size: 2.5rem;
+                }
+                .fa-html5 {
+                    color: #f16524;
+                }
+                .fa-square-js {
+                    color: #f7e018;
+                }
+                .fa-css3 {
+                    color: #2465f1;
+                }
+                .fa-sass {
+                    color: #bf4080;
+                    margin-left: 1rem;
+                }
             }
         }
     }
@@ -90,6 +95,76 @@
                         text-align: right;
                         font-size: 0.8rem;
                         margin: 0rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Desktop styles
+//-----------------------------------------------
+@media screen and (min-width: 769px) {
+    .home-main {
+        padding-top: 0;
+        // flex-direction: row;
+        justify-content: flex-start;
+
+        .intro-hero {
+            h1 {
+            }
+
+            p {
+            }
+        }
+        .home-content {
+            width: 100%;
+            display: flex;
+            // justify-content: ;
+            flex-direction: row-reverse;
+
+            .pri-content {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+
+                .my-skills {
+                    align-self: center;
+                    margin: 1rem;
+                    
+                    .skills-list {
+
+                        p {
+                        }
+                        i {
+                        }
+                        .fa-html5 {
+                        }
+                        .fa-square-js {
+                        }
+                        .fa-css3 {
+                        }
+                        .fa-sass {
+                        }
+                    }
+                }
+            }
+    
+            .blog-section {
+                max-width: 15vw;
+                min-width: 270px;
+                justify-self: flex-start;
+                align-self: center;
+    
+                .blog-list {
+                    ul {
+                        li {
+                            a {
+                            }
+                            p {
+                            }
+                        }
                     }
                 }
             }

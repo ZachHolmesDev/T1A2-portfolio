@@ -216,37 +216,38 @@ footer .copy {
   margin-bottom: 0;
   font-size: 0.85rem;
 }
-.home-main .my-skills {
+.home-main .home-content .my-skills {
   text-align: center;
   background-color: rgba(119, 164, 187, 0.5);
   border-radius: 15px;
   box-shadow: 0 2px 4px #5a5a66;
   border: 2px solid #5a5a66;
   padding: 1rem;
+  margin-bottom: 1rem;
 }
-.home-main .my-skills .skills-list {
+.home-main .home-content .my-skills .skills-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.home-main .my-skills .skills-list p {
+.home-main .home-content .my-skills .skills-list p {
   font-size: 1.5rem;
   margin-bottom: 0.7rem;
 }
-.home-main .my-skills .skills-list i {
+.home-main .home-content .my-skills .skills-list i {
   font-size: 2.5rem;
 }
-.home-main .my-skills .skills-list .fa-html5 {
-  color: #F16524;
+.home-main .home-content .my-skills .skills-list .fa-html5 {
+  color: #f16524;
 }
-.home-main .my-skills .skills-list .fa-square-js {
-  color: #F7E018;
+.home-main .home-content .my-skills .skills-list .fa-square-js {
+  color: #f7e018;
 }
-.home-main .my-skills .skills-list .fa-css3 {
-  color: #2465F1;
+.home-main .home-content .my-skills .skills-list .fa-css3 {
+  color: #2465f1;
 }
-.home-main .my-skills .skills-list .fa-sass {
-  color: #BF4080;
+.home-main .home-content .my-skills .skills-list .fa-sass {
+  color: #bf4080;
   margin-left: 1rem;
 }
 .home-main .blog-section {
@@ -280,6 +281,33 @@ footer .copy {
   margin: 0rem;
 }
 
+@media screen and (min-width: 769px) {
+  .home-main {
+    padding-top: 0;
+    justify-content: flex-start;
+  }
+  .home-main .home-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .home-main .home-content .pri-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .home-main .home-content .pri-content .my-skills {
+    align-self: center;
+    margin: 1rem;
+  }
+  .home-main .home-content .blog-section {
+    max-width: 15vw;
+    min-width: 270px;
+    justify-self: flex-start;
+    align-self: center;
+  }
+}
 .about-main .about {
   margin-bottom: 1rem;
   border: solid 4px rgba(119, 164, 187, 0.5);
@@ -417,10 +445,23 @@ footer .copy {
     flex-direction: column;
     align-items: center;
     color: #ffffff;
+    width: 100%;
   }
-  .projects-main .blog-intro {
+  .projects-main .projects-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects-main .projects-intro p {
     max-width: 30%;
     color: #333333;
+    border: solid 4px rgba(85, 141, 170, 0.5);
+    border-radius: 15px;
+    background-image: linear-gradient(rgba(119, 164, 187, 0.1333333333), rgba(119, 164, 187, 0.5));
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    padding: 0.5rem;
+    text-align: center;
   }
   .projects-main .projects-articles {
     max-width: 78%;
