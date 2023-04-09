@@ -376,6 +376,7 @@ footer .copy {
   }
   .home-main .home-content .blog-section {
     max-width: 15vw;
+    max-height: 620px;
     min-width: 270px;
     align-self: start;
   }
@@ -527,7 +528,7 @@ footer .copy {
     align-items: center;
     justify-content: center;
     color: #ffffff;
-    width: 100%;
+    max-width: 100%;
   }
   .projects-main .projects-intro {
     display: flex;
