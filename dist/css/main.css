@@ -127,6 +127,7 @@ header nav .hamburger-menu {
     position: fixed;
     left: 0;
     width: 100%;
+    max-width: 100vw;
     margin-top: 0.8rem;
     background-color: #7dcd85;
     border: solid 1px black;
@@ -134,8 +135,13 @@ header nav .hamburger-menu {
     border-left: none;
     border-right: none;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 0.4rem;
+    max-width: 100vw;
+  }
+  header nav .nav-list li {
+    max-width: fit-content;
+    margin-right: 0;
   }
   header nav .nav-list.show {
     display: flex;
