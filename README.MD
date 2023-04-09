@@ -61,15 +61,6 @@ Here are the key functionality and features of my portfolio website:
     - [One Page Blank Resume (PDF)](https://lustrous-pika-3fa492.netlify.app/downloads/One%20Page%20Blank%20Resume.pdf)
 
 
-#### Screenshots
-
-Include relevant screenshots of your portfolio website. You can use the following format to add images:
-
-
-1. Screenshot 1
-2. Screenshot 2
-3. ...
-
 #### Target Audience
 
 The website serves as a platform for potential employers or clients to learn more about me, view my resume, and get in touch through the contact form. Links to my GitHub and LinkedIn profiles encourage further networking and collaboration.
